@@ -1,0 +1,20 @@
+
+*{
+  padding: 0%;
+  margin: 0%;
+}
+.App{
+  background-color: blueviolet;
+  width: 500x;
+  height: 670px
+}
+.FullName{
+  font-style:italic;
+  color:red;
+}
+.Profession{
+  color: chartreuse;
+  font-style: inherit;
+}
+
+
