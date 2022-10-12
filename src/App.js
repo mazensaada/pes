@@ -1,7 +1,9 @@
 
+import { useState } from 'react';
 import './App.css';
 import Bio from './compents/Bio';
 import Fullname from './compents/FullName';
+import Navbar from './compents/Navbar';
 import Photo from './compents/Photo';
 import Profession from './compents/Profession';
 
@@ -9,7 +11,12 @@ function App() {
 const name ="mazen saada"
 const profession="student"
 const bio ="software enginering"
+
+ const [text,setText]=useState("")
   return (
+
+
+ 
     <div className="App">
       <div className='user'>
      <Fullname fff={name}/>
@@ -22,11 +29,8 @@ const bio ="software enginering"
      </Photo>
 
      <div class="email">
-  <input type='text' placeholder='email'></input>
-
-
-  
-   </div>
+     <Navbar setText={setText} />
+     </div>
     </div>
   );
 }
